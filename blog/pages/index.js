@@ -1,16 +1,13 @@
 import React from 'react'
 
-export default function Home() {
-  const subtitle = 'アウトプット'
+import Hero from 'components/hero'
 
+export default function Home() {
   return (
-    <>
-    <header>HEADER</header>
-      <main>
-        <hi>HOGE</hi>
-        <p>{subtitle}</p>
-      </main>
-      <footer>FOOTER</footer>
-    </>
+    <Hero
+      title="MOMO"
+      subtitle="もものぺーじ"
+      imageOn
+    />
   )
 }
