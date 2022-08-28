@@ -1,5 +1,6 @@
 import React from 'react'
 import Container from 'components/container'
+import Meta from 'components/meta'
 import Hero from 'components/hero'
 import PostBody from 'components/post-body'
 import Contact from 'components/contact'
@@ -10,8 +11,15 @@ import eyecatch from 'images/about.jpg'
 export default function About() {
   return (
     <Container>
-      <Hero title="About" subtitle="About development activites" />
+      <Meta
+        pageTitle="About"
+        pageDesc="About development activities"
+        pageImg={eyecatch.src}
+        pageImgW={eyecatch.width}
+        pageImgH={eyecatch.height}
+      />
 
+      <Hero title="About" subtitle="About development activites" />
       <figure>
         <Image
           src={eyecatch}
